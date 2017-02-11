@@ -12,15 +12,24 @@ lenap<!DOCTYPE html>
     <script data-main="js/main" src="lib/require.js"></script>
 
   </head>
-  <body>
+  <body style="font-family:moonfishFont;">
 
-    <div class="counter" style="position:absolute; top:10px; right:15px; z-index:2000;"></div>
+    <div class="banner">
+        <div class="banner-center">23.<span style="font-family:moonfishFont;font-size:42px;">September</span>.2017</div>
+        <div class="banner-left"></div>
+        <div class="banner-right"></div>
+    </div>
+
+    <div class="counter"></div>
 
     <div class="header box-shadow">
-        <div class="header-btn">Home</div>
-        <div class="header-btn">Venue</div>
-        <div class="header-btn">Pictures</div>
-        <div class="header-btn">Gifts</div>
+        <div class="header-trim"></div>
+        <div class="header-container">
+            <div class="header-btn">Home</div>
+            <div class="header-btn">Venue</div>
+            <div class="header-btn">Pictures</div>
+            <div class="header-btn">Registry</div>
+        </div>
     </div>
 
     <div class="cover-image box-shadow">
@@ -29,21 +38,62 @@ lenap<!DOCTYPE html>
 
     <div class="background-image">
         <div class="background-fade">
-            <div class="background-top-label">Eric & Ali</div>
+            <div class="background-top-label">Eric <i class="fa fa-heart" style="font-size:24px;"></i> Ali</div>
+            <div style="font-size:32px; color:#111; margin-top:8px;"><span style="font-family:autumnFont;">-</span> We're Getting Married! <span style="font-family:autumnFont;">-</span></div>
         </div>
         <img src="/images/background.JPG"/>
     </div>
 
-    <div class="text-panel" style="top:300px; left:100px; width:300px;">
-        <div>
-            <div class="text-panel-title" style="color:#222; font-size:14px; display:inline-block;">Join us</div>
-            <div class="text-panel-title" style="color:#62c990; font-size:40px; display:inline-block;">9/23/17</div>
+    <div style="position:absolute; top:250px; left:0px; width:calc(50% - 165px);">
+        <div class="text-panel" style="top:0px; left:calc(50% - 180px); width:360px;">
+            <div>
+                <div class="text-panel-title" style="color:#222; font-size:30px; display:inline-block; margin-bottom:10px;">Join Us</div>
+            </div>
+            <div style="font-size:20px;">On this website you will find all of the information about our special day. <br><br> We are excited to celebrate with you!</div>
         </div>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        <div class="text-panel" style="top:230px; left:calc(50% - 180px); width:360px;">
+            <div>
+                <div class="text-panel-title" style="color:#222; font-size:30px; display:inline-block; margin-bottom:10px;">Location</div>
+            </div>
+            <div style="font-size:28px;">Tabard Inn</div>
+            <div><span style="font-family:autumnFont;">1739</span> N Street NW, Washington, DC <span style="font-family:autumnFont;">20036</span></div>
+        </div>
     </div>
 
-    <div class="text-panel" style="top:300px; right:100px; width:300px;">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <div style="position:absolute; top:250px; right:0px; width:calc(50% - 165px);">
+        <div class="text-panel" style="top:0px; left:calc(50% - 120px); width:260px;">
+            <div>
+                <div class="text-panel-title" style="color:#222; font-size:30px; display:inline-block; margin-bottom:10px;">Date</div>
+            </div>
+            <div><span style="font-family:autumnFont; font-size:30px;">09-23-2017</span></div>
+        </div>
+
+        <div class="text-panel" style="top:150px; left:calc(50% - 120px); width:260px;">
+            <div>
+                <div class="text-panel-title" style="color:#222; font-size:30px; display:inline-block; margin-bottom:10px;">Schedule</div>
+                <!-- <div class="text-panel-title" style="color:#62c990; font-size:40px; display:inline-block;">9/23/17</div> -->
+            </div>
+            <div style="font-size:20px;"><div style="display:inline-block; width:80px; padding-right:20px; text-align:right;"><span style="font-family:autumnFont;">6:00</span>pm</div>Arrival</div>
+            <div style="font-size:20px;"><div style="display:inline-block; width:80px; padding-right:20px; text-align:right;"><span style="font-family:autumnFont;">6:15</span>pm</div>Wedding Ceremony</div>
+            <div style="font-size:20px;"><div style="display:inline-block; width:80px; padding-right:20px; text-align:right;"><span style="font-family:autumnFont;">7:00</span>pm</div>Cocktail Time</div>
+            <div style="font-size:20px;"><div style="display:inline-block; width:80px; padding-right:20px; text-align:right;"><span style="font-family:autumnFont;">7:30</span>pm</div>Dinner</div>
+            <div style="font-size:20px;"><div style="display:inline-block; width:80px; padding-right:20px; text-align:right;"><span style="font-family:autumnFont;">9:30</span>pm</div>Wrap-up</div>
+        </div>
+    </div>
+
+    <div class="tabard-image">
+        <div class="tabard-fade">
+            <!-- <div class="background-top-label">Eric & Ali</div> -->
+        </div>
+        <img src="/images/tabard_day.JPG"/>
+    </div>
+
+    <div class="venue-container" style="position:absolute; top:1050px; left:calc(50% - 450px); width:900px; height:350px;">
+        <div style="font-family:autumnFont; color:#222; font-size:40px; margin:30px 0px 15px 0px;">Venue</div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam tortor, tincidunt id mi nec, consectetur pharetra nisl. Vivamus ac posuere nisi, et hendrerit neque. Quisque ornare nisl eu orci fringilla pretium. Integer maximus lorem ut porta fringilla. Aenean sed tincidunt elit, quis sodales tellus. Nullam vel pulvinar nulla, imperdiet vulputate nisi. Sed fermentum sem non metus hendrerit tristique. Nulla eget sapien egestas, imperdiet eros non, finibus ipsum. Nullam sed magna lectus. Integer commodo tempus ante, at volutpat purus. Vestibulum ultrices quam in pharetra pellentesque. Aliquam porttitor sit amet dolor id dapibus. Integer volutpat, lectus non accumsan cursus, urna sapien finibus augue, malesuada sodales justo massa sed leo. Nullam dapibus, dui et auctor efficitur, eros ligula dapibus odio, id sagittis dui justo sit amet mi. Phasellus blandit sem ut interdum vestibulum.
+        </div>
     </div>
 
   </body>

@@ -14,6 +14,31 @@ body {
     color: #333;
 }
 
+.counter {
+    position: fixed;
+    bottom: 15px;
+    left: calc(50% - 220px);
+    z-index: 2000;
+    font-size: 15px;
+    font-family: moonfishFont;
+    color: #333;
+    padding: 6px 15px 0px 0px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.counter .numCount {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: autumnFont;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    color: #333;
+    /*float: left;*/
+}
+
 .background-image {
     position: absolute;
     z-index: 900;
@@ -38,14 +63,13 @@ body {
     top: -575px;
     right: 0px;
 }
-
 .background-image .background-top-label {
-    color: #222;
+    color: #111;
     font-size: 70px;
     line-height: 70px;
     font-weight: bold;
     font-family: autumnFont;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 /*body {
@@ -69,6 +93,24 @@ body {
 .header.fixed {
     position: fixed;
     top: 0px;
+}
+
+.header-trim {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 6px);
+    /*border-top: 2px dashed #fff;*/
+    /*border-bottom: 2px dashed #fff;*/
+}
+
+.header-container {
+    position: absolute;
+    top: 0px;
+    /*left: calc(50% - 100px);*/
+    width: 100%;
+    text-align: center;
 }
 
 .header-btn {
@@ -100,7 +142,7 @@ body {
 }
 
 .cover-image {
-    margin-top: 150px;
+    margin-top: 130px;
     width: 400px;
     border-radius: 50%;
     overflow: hidden;
@@ -119,6 +161,96 @@ body {
 .text-panel-title {
     font-family: autumnFont;
 }
+
+.banner {
+    top: 470px;
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    display: block;
+}
+
+.banner-center {
+  top: 0px;
+  position: absolute;
+  z-index: 2000;
+  left: 50%;
+  display: block;
+  margin: 100px -200px;
+  padding-top: 8px;
+  width: 400px;
+  height: 60px;
+  /*border: 1px solid #4ea073;*/
+  font-family: 'autumnFont';
+  font-size: 46px;
+  text-align: center;
+  color: #fff;
+  background: #62c990;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+      				0 6px 10px rgba(0,0,0,.15);
+}
+.banner-left::before,
+.banner-right::after {
+  content: '';
+  position: absolute;
+  z-index: 1999;
+  left: -230px;
+  top: 115px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #4ea073;
+  border-right: 20px solid #62c990;
+  border-bottom-color: #62c990;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+.banner-right::after {
+  left: auto;
+  right: -230px;
+  border-left: 20px solid #62c990;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
+.tabard-image {
+    position: absolute;
+    z-index: 900;
+    width: 100%;
+    height: 350px;
+    top: 700px;
+    overflow: hidden;
+}
+.tabard-fade {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: rgba(230, 230, 230, 0.3);
+    text-align: center;
+}
+.tabard-image img {
+    width: 1500px;
+    z-index: 900;
+    position: absolute;
+    top: -525px;
+    right: 0px;
+}
+.tabard-image .tabard-top-label {
+    color: #222;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: bold;
+    font-family: autumnFont;
+    margin-top: 30px;
+}
+
+
+
+
+
 
 /* GLOBAL STUFF */
 

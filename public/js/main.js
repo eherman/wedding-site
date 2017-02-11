@@ -29,7 +29,8 @@
             'custom-scrollbar': __dirname + '/lib/vendor/custom-scrollbar/custom-scrollbar.min',
             'toastr': __dirname + '/lib/vendor/toastr/toastr.min',
             'codeMirror': __dirname + '/lib/vendor/code-mirror',
-            'flip': __dirname + '/lib/vendor/jquery-flip/jquery-flip.min'
+            'flip': __dirname + '/lib/vendor/jquery-flip/jquery-flip.min',
+            'countdown': __dirname + '/lib/vendor/jquery.countdown/jquery.countdown.min'
         },
         shim: {
             'bootstrap': {
@@ -79,6 +80,9 @@
             },
             'flip': {
                 deps: ['jquery']
+            },
+            'countdown': {
+                deps: ['jquery']
             }
         }
     });
@@ -101,8 +105,9 @@
         'scrollTo',
         'custom-scrollbar',
         'toastr',
-        'flip'
-        ], 
+        'flip',
+        'countdown'
+        ],
         function(App, $) {
             App.initialize();
     });

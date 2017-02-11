@@ -1,0 +1,10 @@
+@import url('/lib/vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css');
+@import url('/lib/vendor/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css');
+@import url('/lib/vendor/qtip/qtip.min.css');
+@import url('/lib/vendor/daterangepicker/daterangepicker.css');
+@import url('/lib/vendor/font-awesome-4.5.0/css/font-awesome.min.css');
+@import url('/lib/vendor/custom-scrollbar/custom-scrollbar.min.css');
+@import url('/lib/vendor/toastr/toastr.min.css');
+@import url('/lib/vendor/code-mirror/lib/codemirror.css');
+
+@import url('/css/default.css');

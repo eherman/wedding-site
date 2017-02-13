@@ -4,7 +4,8 @@ define([
     'radio',
     'countdown',
     'moment',
-    'moment-tmz'
+    'moment-tmz',
+    'slick'
 ], function ($, Handlebars, Radio, Countdown, Moment) {
 
     'use strict';
@@ -33,6 +34,47 @@ define([
                 $(this).html(event.strftime('<div class="numCount">%m</div> months <div class="numCount">%n</div> days <div class="numCount">%H</div> hours <div class="numCount">%M</div> minutes <div class="numCount">%S</div> seconds'));
             });
 
+            var disableArrows = false;
+            $('.fa-angle-right').on('click', function() {
+                if(!disableArrows) {
+                    var carLeft = parseInt($('.img-carousel').css('left').split('px'));
+                    var carWidth = $('.img-carousel').width();
+                    disableArrows = true;
+                    if(carLeft - 600 > -carWidth) {
+                        $('.img-carousel').animate({
+                            left: "-=600"
+                        }, 300, function() {
+                            disableArrows = false;
+                        });
+                    } else {
+                        $('.img-carousel').animate({
+                            left: 0
+                        }, 300, function() {
+                            disableArrows = false;
+                        });
+                    }
+                }
+            });
+            $('.fa-angle-left').on('click', function() {
+                if(!disableArrows) {
+                    var carLeft = parseInt($('.img-carousel').css('left').split('px'));
+                    var carWidth = $('.img-carousel').width();
+                    disableArrows = true;
+                    if(carLeft < 0) {
+                        $('.img-carousel').animate({
+                            left: "+=600"
+                        }, 300, function() {
+                            disableArrows = false;
+                        });
+                    } else {
+                        $('.img-carousel').animate({
+                            left: -carWidth + 600
+                        }, 300, function() {
+                            disableArrows = false;
+                        });
+                    }
+                }
+            });
         }
     };
 

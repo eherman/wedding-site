@@ -247,8 +247,16 @@ body {
     margin-top: 30px;
 }
 
-
-
+.fa-angle-left,
+.fa-angle-right {
+    cursor: pointer;
+    color: #999;
+}
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+    cursor: pointer;
+    color: #222;
+}
 
 
 
